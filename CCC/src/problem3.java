@@ -12,12 +12,29 @@ public class problem3
 		{
 		Scanner sc = new Scanner (System.in);
 		
-		int linenum = sc.nextInt();
+		int lineNum = sc.nextInt();
 		
-		for (int i=0; i<linenum; i++) 
+		int[] num = new int[lineNum];
+		String[] word = new String[lineNum];
+		
+		
+		for (int i=0; i<lineNum; i++) 
 		{
-			String input = sc.nextLine();
+			num[i] = sc.nextInt();
+			word[i] = sc.next();
 		}
+		
+		for (int i=0; i<lineNum; i++)  {
+			for (int j=0; j<num[i]; j++)  {
+			System.out.print(word[i]);
+		}
+			System.out.println();
+		} 
+		
+		sc.close();
+		
+		
+	
 
 		}
 
